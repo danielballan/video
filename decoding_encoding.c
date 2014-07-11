@@ -627,6 +627,7 @@ static void video_decode_example(const char *outfilename, const char *filename)
     printf("\n");
 }
 
+/*
 int main(int argc, char **argv)
 {
     const char *output_type;
@@ -662,3 +663,4 @@ int main(int argc, char **argv)
 
     return 0;
 }
+*/
