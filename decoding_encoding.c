@@ -632,7 +632,6 @@ int main(int argc, char **argv)
 {
     const char *output_type;
 
-    /* register all the codecs */
     avcodec_register_all();
 
     if (argc < 2) {
