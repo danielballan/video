@@ -14,8 +14,8 @@ C = ffi.dlopen(None)
 
 # These raise if the library is not found. They are working properly.
 libavformat = ffi.dlopen('avformat')
-libavutil = ffi.dlopen('libavutil')
-libavcodec = ffi.dlopen('libavcodec')
+libavutil = ffi.dlopen('avutil')
+libavcodec = ffi.dlopen('avcodec')
 
 print('Loaded lib {0}'.format(libavformat))
 print('Loaded lib {0}'.format(libavutil))
