@@ -43,4 +43,4 @@ libexample = ffi.verify("""
     define_macros=[("INBUF_SIZE", "4096"),
                    ("AUDIO_INBUF_SIZE", "20480"),
                    ("AUDIO_REFILL_THRESH", "4096")],
-    libraries=['libavformat', 'libavutil', 'libavcodec'])
+    libraries=['avformat', 'avutil', 'avcodec'])

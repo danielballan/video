@@ -30,22 +30,12 @@
  * format handling
  */
 
-/* DAN: These are included and defined separately in Python.
-#include <math.h>
-
-#include <libavutil/opt.h>
-#include <libavcodec/avcodec.h>
-#include <libavutil/channel_layout.h>
-#include <libavutil/common.h>
-#include <libavutil/imgutils.h>
-#include <libavutil/mathematics.h>
-#include <libavutil/samplefmt.h>
+#include "fucntions.h"
 
 #define INBUF_SIZE 4096
 #define AUDIO_INBUF_SIZE 20480
 #define AUDIO_REFILL_THRESH 4096
 
-*/
 
 /* check that a given sample format is supported by the encoder */
 static int check_sample_fmt(AVCodec *codec, enum AVSampleFormat sample_fmt)
