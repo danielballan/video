@@ -656,3 +656,8 @@ int main(int argc, char **argv)
     return 0;
 }
 */
+
+void initialize()
+{
+    av_register_all();
+}

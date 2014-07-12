@@ -1,3 +1,9 @@
+"""Usage:
+
+from example import libexample, arg
+libexample.video_decode_example(arg('outfile'), arg('infile'))
+"""
+
 from __future__ import print_function
 from cffi import FFI
 
@@ -26,6 +32,7 @@ ffi.cdef("""
     void   audio_decode_example   (const char *outfilename, const char *filename);
     void   video_encode_example   (const char *filename, int codec_id);
     void   video_decode_example   (const char *outfilename, const char *filename);
+    void   initialize             ();
 """)
 
 libexample = ffi.verify("""
@@ -36,3 +43,11 @@ libexample = ffi.verify("""
                    ("AUDIO_INBUF_SIZE", "20480"),
                    ("AUDIO_REFILL_THRESH", "4096")],
     libraries=['avformat', 'avutil', 'avcodec'])
+
+libexample.initialize()
+
+def arg(filename):
+    "Utility for unboxing string args."
+    return ffi.new("char[]", filename)
+
+
