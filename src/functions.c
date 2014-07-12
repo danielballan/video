@@ -30,7 +30,7 @@
  * format handling
  */
 
-#include "fucntions.h"
+#include "functions.h"
 
 #define INBUF_SIZE 4096
 #define AUDIO_INBUF_SIZE 20480
